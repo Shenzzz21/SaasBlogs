@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SaasBlogs.Domain\SaasBlogs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
