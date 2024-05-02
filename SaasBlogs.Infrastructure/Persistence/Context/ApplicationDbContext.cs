@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SaasBlogs.Application.Contracts.Repositories;
 
 namespace SaasBlogs.Infrastructure.Persistence.Context
 {
-    public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string>
+    public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string>, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
